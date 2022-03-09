@@ -79,10 +79,10 @@ public class MyBot extends TelegramLongPollingBot {
 				// List<InlineKeyboardButton> rowInline = new ArrayList<InlineKeyboardButton>();
 				// InlineKeyboardButton b1=new InlineKeyboardButton();
 
-				InlineKeyboardButton b1 = new InlineKeyboardButton();
-				b1.setText("FIND SLOTS BY PINCODE");
-				b1.setCallbackData("pincode");
-				rowInline1.add(b1);
+//				InlineKeyboardButton b1 = new InlineKeyboardButton();
+//				b1.setText("FIND SLOTS BY PINCODE");
+//				b1.setCallbackData("pincode");
+//				rowInline1.add(b1);
 
 				InlineKeyboardButton b2 = new InlineKeyboardButton();
 				b2.setText("SLOTS BY LOCATION");
@@ -781,6 +781,7 @@ public class MyBot extends TelegramLongPollingBot {
 			// AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestProperty("Accept", "application/JSON");
+			connection.setRequestProperty("Content-Type", "application/json; utf-8");
 			connection.setRequestProperty("User-Agent",
 					"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.51");
 			connection.setRequestProperty("Connection", "keep-alive");
@@ -832,6 +833,7 @@ public class MyBot extends TelegramLongPollingBot {
 			// AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestProperty("Accept", "application/JSON");
+			connection.setRequestProperty("Content-Type", "application/json; utf-8");
 			connection.setRequestProperty("User-Agent",
 					"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.51");
 			connection.setRequestProperty("Connection", "keep-alive");
